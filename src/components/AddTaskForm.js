@@ -10,7 +10,7 @@ const AddTaskForm = ({ addTask }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className="add-task-form">
       <input
         type="text"
         value={taskName}

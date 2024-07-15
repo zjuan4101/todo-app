@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import TaskList from './components/TaskList';
 import AddTaskForm from './components/AddTaskForm';
+import './App.css';
 
 const App = () => {
   const [tasks, setTasks] = useState([]);
@@ -34,7 +35,7 @@ const App = () => {
   };
 
   return (
-    <div>
+    <div className="app-container">
       <h1>To-Do List</h1>
       <AddTaskForm addTask={addTask} />
       <TaskList tasks={tasks} deleteTask={deleteTask} toggleComplete={toggleComplete} />
